@@ -62,16 +62,28 @@ Notes & Book / Other Video Lacture's
 
 ContactList**
 
+********models*********
 ATTENDANCE:
-
 [ { StudentId, Present/Abscent/Leave } ]
-
 Present - Bool
-
 Abscent - Bool
-
 Leave - Bool
-
 Leave Reason - String
-
 Date - Date
+
+Homework(Navbar):
+subject--->array.(one can upload many)
+image ---->arrays
+text --->String
+date(commencement,submission)
+class(think about it).
+teacher
+publish--->bool type(one can delete then just update this field)
+
+
+
+
+
+
+
+

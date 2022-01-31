@@ -7,22 +7,15 @@ Student:
 Info:
 
 NAME:
-
 USER ID:
-
 MOB NO(AUTHENTICATED):
-
 AADHAAR(OPTIONAL):
-
 EMAIL(OPTIONAL):
-
 CLASS > SECTION:
-
 PARENT'S DETAILS:
-
 ADDRESS:
-
 Fees:
+
 
 SECTION
 
@@ -79,6 +72,15 @@ date(commencement,submission)
 class(think about it).
 teacher
 publish--->bool type(one can delete then just update this field)
+
+Exam Time-Table
+exam --->array in which we have field like subject timing date.
+class.
+publish
+
+
+Class Routine(Navbar):
+**************************************
 
 
 

@@ -6,16 +6,21 @@ const logger = require("morgan")
 
 const indexRouter = require("./routes/index")
 const usersRouter = require("./routes/users")
-const hbs = require("hbs")
+const hbs = require("express-handlebars")
 
 const app = express()
 
 // view engine setup
+const hbsOptions = {
+  extname: ".htm",
+  layoutsDir: "views/layouts",
+  partialsDir: "views/partials",
+}
+app.engine(".htm", hbs.engine(hbsOptions))
+app.set("view engine", ".htm")
 app.set("views", path.join(__dirname, "views"))
-app.set("view engine", "hbs")
-hbs.registerPartials(path.join(__dirname, "views/partials"))
 
-
+// middleware setup...
 app.use(logger("dev"))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
